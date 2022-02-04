@@ -151,15 +151,15 @@ var getAllActiveTasks = function () {
   });
 }
 
-$(document).on('change', '.completed-tasks', function() {
+$('.completed-tasks').on('click', function() {
   getAllCompletedTasks();
 })
 
-$(document).on('change', '.active-tasks', function() {
+$('.active-tasks').on('click', function() {
   getAllActiveTasks();
 })
 
-$(document).on('change', '.all-tasks', function() {
+$('.all-tasks').on('click', function() {
   getAndDisplayAllTasks();
 })
 
